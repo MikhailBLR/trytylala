@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ylus</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+
+            <div class="header_menu">
+                <button class="burger-bro"><img class="burger-img" src="image/free-icon-burger-menu-17807662.png" alt="">
+                    <p class='burger-text'>Меню</p> 
+                </button>
+                <a href="#" class="header_title">Ylus
+                    <img src="#" alt="logo" class="title_img" style='visibility: hidden;'>
+                </a>
+                <img src="image/channels4_profile.jpg" class="header_img">
+            </div>
+
+    </header>
+
+    <section class="informationLine">
+
+        <article class="informationLine__newsBlock">
+            <div class="newsBlock_conteiner">
+                <div class="newsBlock_title">
+                    Новости
+                </div>
+                <div class="newsBlock_content">
+                    <div class="newsBlock_content--item">Lorem ipsum dolor sit amet.</div>
+                    <div class="newsBlock_content--item">Lorem ipsum dolor sit amet.</div>
+                    <div class="newsBlock_content--item">Lorem ipsum dolor sit amet.</div>
+                    <div class="newsBlock_content--item">Lorem ipsum dolor sit amet.</div>
+                    
+                </div>
+            </div>
+        </article>
+
+        <div class="informationLine_contentBox">
+
+            <div class="informationLine_btn-nextContainer">
+                <button class="informationLine_btn-next" id="btn-back">&lt;</button>
+                <button class="informationLine_btn-next" id="btn-next">&gt;</button>
+            </div>
+
+            <article class="informationLine_content informationLine_content--active" id="content-1">
+                <img src="https://i.ytimg.com/vi/u3T0NdWWKg8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==" alt="Тарковский хардкор" class="informationLine_img">
+                <div class="container">
+                    <button id="link-modalWindow" class="informationLine-text">
+                        <h2 class="informationLine_title">Тарковский хардкор</h2>
+                        <p class="informationLine_description">Отыграл вайп без подсумка</p>
+                    </button>
+                </div>
+                <div class="informationLine_content--links">
+                    <a href="https://vk.com/video-227014211_456239021" id="linkVk"></a>
+                    <a href="https://www.youtube.com/watch?v=u3T0NdWWKg8&t=1s" id="linkYouTube"></a>
+                </div>
+            </article>
+
+        </div>
+
+        <ul class="informationLine_box-btn">
+            <li class="informationLine_btn informationLine__btn--active" data-button="content-1"></li>
+            <li class="informationLine_btn" data-button="content-2"></li>
+            <li class="informationLine_btn" data-button="content-3"></li>
+            <li class="informationLine_btn" data-button="content-4"></li>
+        </ul>
+
+    </section>
+
+    <!-- <main class="main">
+        <div class="conteiner">
+            <h2 class="main_titleOne">Варианты авторской сборки</h2>
+        </div>
+        <div class="mainContent">
+            <ul class="mainContent_cards">
+               <li class="mainContent_item">
+                <h3 class="item_title">Godzilla</h3>
+                <img src="" alt="" class="item_img">
+                <a href="" class="item_link-buy">Take my money</a>
+                <a href="" class="item_link-info">Подробнее</a>
+               </li>
+               <li class="mainContent_item">
+                <h3 class="item_title">King-Kong</h3>
+                <img src="" alt="" class="item_img">
+                <a href="" class="item_link-buy">Take my money</a>
+                <a href="" class="item_link-info">Подробнее</a>
+               </li>
+               <li class="mainContent_item">
+                <h3 class="item_title">Diablo</h3>
+                <img src="" alt="" class="item_img">
+                <a href="" class="item_link-buy">Take my money</a>
+                <a href="" class="item_link-info">Подробнее</a>
+               </li>
+               <li class="mainContent_item">
+                <h3 class="item_title">Hustler</h3>
+                <img src="" alt="" class="item_img">
+                <a href="" class="item_link-buy">Take my money</a>
+                <a href="" class="item_link-info">Подробнее</a>
+               </li>
+               <li class="mainContent_item">
+                <h3 class="item_title">Rik & Morty</h3>
+                <img src="" alt="" class="item_img">
+                <a href="" class="item_link-buy">Take my money</a>
+                <a href="" class="item_link-info">Подробнее</a>
+               </li>
+               <li class="mainContent_item">
+                <h3 class="item_title">UFO</h3>
+                <img src="" alt="" class="item_img">
+                <a href="" class="item_link-buy">Take my money</a>
+                <a href="" class="item_link-info">Подробнее</a>
+               </li>
+            </ul>
+        </div>
+    </main> -->
+
+    <div id="modalWindow" class="modalWindow">
+        <div class="modalWindow__body">
+            <div class="modalWindow__content">
+                <button id="modal-btn" class="modalWindow__closeBtn">X</button>
+                
+                <div class="modalWindow__title">Где будем смотреть видео?</div>
+                
+                <div class="modalWindow__linkBox">
+                    <a href="" class="modalWindow__link" id="btn-youtube" target="_blank"><img id="img-youtube--svg" src="image/icons8-youtube.svg" alt="YouTube"></a>
+                    <a href="" class="modalWindow__link" id="btn-vk" target="_blank"><img id="img-vk--svg" src="image/icons8-vk.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/renderCards.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/modalWindow.js"></script>
+</body>
+</html>
