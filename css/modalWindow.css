@@ -4,10 +4,11 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(123, 124, 125, 0.584);
+    background-color: rgba(33, 33, 34, 0.584);
+    backdrop-filter: blur(32px);
     top: 0;
     left: 0;
-
+    z-index: 90;
 }
 
 .modalWindow--active{

@@ -30,7 +30,7 @@
 }
 
 
-.burger-bro{
+.header__burger-bro{
     display: flex;
     background-color: inherit;
     margin-left: 60px;
@@ -40,7 +40,7 @@
     
 }
 
-.burger-bro:hover{
+.header__burger-bro:hover{
   background-color: #9a959560;
 }
 

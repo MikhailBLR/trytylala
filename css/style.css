@@ -2,6 +2,7 @@
 @import url(headerStyle.css);
 @import url(InfoLine.css);
 @import url(modalWindow.css);
+@import url(header__modal.css);
   
 body{
     max-width: 1760px;

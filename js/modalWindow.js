@@ -26,7 +26,7 @@ textBoxes.forEach(textBox => {
 });
 
 btnClose.addEventListener('click', closeModal);
-modal.addEventListener('click', closeModal);
+// modal.addEventListener('click', closeModal);
 
 function openModal(element) {
     modal.classList.add('modalWindow--active');
@@ -60,3 +60,8 @@ function closeModal() {
 
 
 
+document.addEventListener('keydown', function(event){
+    if(event.key === "Escape"){
+        closeModal()
+    }
+});

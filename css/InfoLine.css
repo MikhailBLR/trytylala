@@ -1,175 +1,179 @@
 .informationLine {
-    margin: 0 15px;
-    position: relative;
-    height: 600px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-   
+  margin: 0 15px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  
 }
 .informationLine__newsBlock {
-    border-radius: 3px;
-    background-color: #ffffff;
-    min-width: max-content;
-    margin-right: 20px;
-    box-shadow: 0px 0 2px #5218a3,
-                0 0 2px #cb6af1,
-                0 0 5px #8510c4,
-                0 0 5px #760571;
-   
+  border-radius: 3px;
+  background-color: #ffffff;
+  min-width: max-content;
+  margin-right: 20px;
+  box-shadow: 0px 0 2px #5218a3,
+  0 0 2px #cb6af1,
+  0 0 5px #8510c4,
+  0 0 5px #760571;
+  
 }
 
 .newsBlock_conteiner {
-    height: 98%;
-    display: grid;
-    grid-template-rows: 10% 90%;
-    
+  height: 98%;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  
 }
 .newsBlock_title {
-    font-size: 30px;
-    color:#8623bb;
-    font-weight: 700;
-    text-align: center;
-    padding: 10px 0;
-    border-bottom: 2px solid #8510c4;
-    margin-bottom: 5px;
+  font-size: 30px;
+  color:#8623bb;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #8510c4;
+  margin-bottom: 5px;
 }
 .newsBlock_content {
-    display: flex;
-    flex-direction: column;
-    height: inherit;
-    justify-content: space-between;    
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  justify-content: space-between;    
 }
 .newsBlock_content--item {
-    max-height: 130px;
-    
-}
-
-.informationLine_btn-nextContainer{
-    position: absolute;
-    width: 100%;
-    top: 48%;
-    padding: 0 12px;
-    display: flex;
-    justify-content: space-between;
-    
-    
-}
-/* Настройки кнопок навигации */
-.informationLine_btn-next {
-    background-color: #f8f6f9;
-    width: 55px;
-    height: 53px;
-    font-size: 23px;
-    font-weight: 400;
-    z-index: 1;
-    opacity: 0; 
-    transition: opacity 0.3s ease; 
-    color: black;
-}
+  max-height: 130px;
   
-/* Показать кнопки при наведении на секцию */
-.informationLine_contentBox:hover .informationLine_btn-next {
-    opacity: 1; 
-}
-  
-  /* Эффект наведения на кнопки */
-.informationLine_btn-next:hover {
-    background-color: #8623bb;
-    color: #fff;
 }
 
 
 .informationLine_contentBox {
-    position: relative;
-    margin-left: 20px;
+  position: relative;
+  margin-left: 20px;
 }
+
 .informationLine_content {
-    display: none;
-    position: relative;
-    
+  display: none;
+  
 }
-  /* Активный контент */
-  .informationLine_content--active {
-    display: block;
+
+.informationLine_content--active {
+  display: block;
+  
+}
+
+.informationLine_btn-nextContainer{
+  position: absolute;
+  width: 100%;
+  top: 48%;
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+.informationLine_btn-next {
+  background-color: #f8f6f9;
+  width: 55px;
+  height: 53px;
+  font-size: 23px;
+  font-weight: 400;
+  z-index: 1;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  color: black;
+}
+
+.informationLine_box-btn {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%); 
+  display: flex;
+  z-index: 1;
   }
+  
+.informationLine__btn {
+  background-color: rgba(255, 255, 255, 0.56); 
+  margin-right: 12px;
+  padding: 4px 4px;
+  border-radius: 100%; 
+  border: none;
+  cursor: pointer;
+}
+
+.informationLine__btn--active {
+  background-color: #b21ec3; 
+}
+
+/* Показать кнопки при наведении на секцию */
+.informationLine_contentBox:hover .informationLine_btn-next {
+  opacity: 1; 
+}
+
+/* Эффект наведения на кнопки */
+.informationLine_btn-next:hover {
+  background-color: #8623bb;
+  color: #fff;
+}
+
+  
+  /* Активная кнопка выбора контента */
+.informationLine__btn--active {
+  color: #8623bb; 
+}
 
 
 .informationLine_img {
-    border-radius: 3px;
-    cursor: pointer;
-    width: 100% ;
-    height: 600px;
-    filter: brightness(77%);
-    box-shadow: 0px 0 7px #1D2124,
-                0 0 2px #1D2124,
-                0 0 5px #1D2124,
-                0 0 7px #1D2124;
+  cursor: pointer;
+  width: 100% ;
+  height: 600px;
+  filter: brightness(77%);
+  border-radius: 3px;
+  box-shadow: 0px 0 7px #1D2124,
+  0 0 2px #1D2124,
+  0 0 5px #1D2124,
+  0 0 7px #1D2124;
 }
 
   /* Текстовая информация */
-  .informationLine-text {
-    cursor: pointer;
-    position: absolute;
-    bottom: 16%;
-    left: 6%; 
-    -webkit-text-stroke: 1.3px rgba(0, 0, 0, 0.362); 
-    transition: color 0.4s ease; 
-    color: #ffff
-  }
-  
-  .informationLine-text::before{
-    content: '';
-    position: absolute;
-    margin: 16px 0 0 -55%;
-    width: 20px;
-    height: 60px;
-    background-image: url('../image/Снимок\ экрана\ 2024-10-16\ 193306-Photoroom.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  
-  /* Эффект наведения на текст */
-  .informationLine-text:hover {
-    color: #8623bb; 
-  }
+.informationLine-text {
+  cursor: pointer;
+  position: absolute;
+  bottom: 16%;
+  left: 6%; 
+  -webkit-text-stroke: 1.3px rgba(0, 0, 0, 0.362); 
+  transition: color 0.4s ease; 
+  color: #ffff
+}
 
- /* Заголовок контента */
- .informationLine_title {
-    font-size: 33px;
-    padding-bottom: 2px;
-  }
-  
-  /* Описание контента */
-  .informationLine_description {
-    padding-left: 2px;
-    font-size: 22px;
-    font-weight: 700;
-  }
-  
-  /* Кнопки выбора контента */
-  .informationLine_box-btn {
-    display: flex;
-    position: absolute;
-    bottom: 5%;
-    left: 70%; 
-    transform: translateX(-70%); /* Корректировка смещения */
-  }
-  
-  /* Индикаторы выбора контента */
-  .informationLine_btn {
-    color: rgba(255, 255, 255, 0.56); 
-    margin-right: 25px;
-    border-radius: 100%; 
-    border: none;
-    font-size: 25px;
-    cursor: pointer;
-  }
-  
-  /* Активная кнопка выбора контента */
-  .informationLine__btn--active {
-    color: #8623bb; 
-  } 
+.informationLine-text::before{
+  content: '';
+  position: absolute;
+  margin: 16px 0 0 -55%;
+  width: 20px;
+  height: 60px;
+  background-image: url('../image/Снимок\ экрана\ 2024-10-16\ 193306-Photoroom.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-  .informationLine_content--links{
-    display: none;
-  }
+/* Эффект наведения на текст */
+.informationLine-text:hover {
+  color: #8623bb; 
+}
+
+/* Заголовок контента */
+.informationLine_title {
+  font-size: 33px;
+  padding-bottom: 2px;
+}
+
+/* Описание контента */
+.informationLine_description {
+  padding-left: 2px;
+  font-size: 22px;
+  font-weight: 700;
+}
+  
+.informationLine_content--links{
+  display: none;
+}

@@ -3,7 +3,7 @@
 const btnNext = document.querySelector('#btn-next');
 const btnBack = document.querySelector('#btn-back');
 const contents = document.querySelectorAll('.informationLine_content');
-const buttons = document.querySelectorAll('.informationLine_btn');
+const buttons = document.querySelectorAll('.informationLine__btn');
 const aLinks = document.querySelectorAll('.informationLine-text')
 const images = document.querySelectorAll('.informationLine_img')
 
