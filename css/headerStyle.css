@@ -60,7 +60,7 @@
     color: rgb(129, 15, 142);
 }
 .header_title {
-    padding-left: 75px;
+    padding-left: 100px;
     justify-self: center;
     letter-spacing: 4px;
     color: transparent;
@@ -70,6 +70,19 @@
     font-weight: 700;
     
 }
-.title_img {
-    
+
+.header__menu-1761px{
+    display: none;
+    height: inherit;
+}
+
+.header__items-1761px{
+    display: flex;
+    height: inherit;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #9613b3;
 }

@@ -1,0 +1,87 @@
+@media(min-width:1760px){
+    body{
+      width: 1760px;
+      margin: 0 auto;
+    }
+}
+
+@media(min-width: 1761px){
+    .informationLine{
+      margin: 0;
+    }
+  }
+
+@media(min-width: 1100px) {
+    .header_menu{ 
+        display: none;
+    }
+
+    .header__menu-1761px{
+        width: 100%;
+        display: block;
+    }
+    
+}
+
+@media (max-width:963px) {
+    .informationLine{
+        height: auto;
+        grid-template-areas: 
+        "img img img"
+        "news news news"
+        "news news news"
+        ;
+        margin: 0;
+        gap: 25px;
+    }
+    .informationLine_contentBox{
+        grid-area: img;
+        margin: 0;
+        width: 100vw;
+    }
+
+    .informationLine__newsBlock{
+        grid-area: news;
+        width: 100vw;
+        margin: 0;
+    }
+}
+
+@media (max-width: 915px) {
+    .header_menu {
+        margin-top: 11px;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .header_title{
+        padding-left: 0;
+        margin-left: 100px;
+        justify-self: start;
+    }
+
+    .header_img{
+        display: none;
+    }
+    .header__burger-bro{
+        margin-left: 13px;
+    }
+}
+
+@media (max-width: 832px){ 
+    .modalWindow__body{
+       margin-top: -50px;
+   }
+   .informationLine_contentBox{
+    height: max-content;
+   }
+   .informationLine_img{
+    height: inherit;
+   }
+}
+
+@media (max-width: 612px) {
+    .header_title{
+        margin-left: 0;
+        justify-self: center;
+    }
+}

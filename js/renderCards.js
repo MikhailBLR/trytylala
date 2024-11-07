@@ -14,7 +14,7 @@ class CardContent{
         document.querySelector(this.parent).insertAdjacentHTML('beforeEnd',
         `<article class="informationLine_content" id="content-${this.numberContent}">
             <img src="${this.imgUrl}" alt="t${this.title}" class="informationLine_img">
-            <div class="container">
+            <div class="informationLine__text-conteiner">
                 <button id='link-modalWindow' class="informationLine-text">
                     <h2 class="informationLine_title">${this.title}</h2>
                     <p class="informationLine_description ">${this.descr}</p>

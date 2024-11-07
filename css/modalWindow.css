@@ -27,13 +27,6 @@
 
 }
 
-@media (min-height: 832px){ 
-     .modalWindow__body{
-        margin-top: -50px;
-    }
-}
- 
-
 .modalWindow__content {
     display: grid;
     grid-template-rows: 69px 97px 58px;

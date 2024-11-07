@@ -3,46 +3,7 @@
   height: 600px;
   display: grid;
   grid-template-columns: 25% 75%;
-  
 }
-.informationLine__newsBlock {
-  border-radius: 3px;
-  background-color: #ffffff;
-  min-width: max-content;
-  margin-right: 20px;
-  box-shadow: 0px 0 2px #5218a3,
-  0 0 2px #cb6af1,
-  0 0 5px #8510c4,
-  0 0 5px #760571;
-  
-}
-
-.newsBlock_conteiner {
-  height: 98%;
-  display: grid;
-  grid-template-rows: 10% 90%;
-  
-}
-.newsBlock_title {
-  font-size: 30px;
-  color:#8623bb;
-  font-weight: 700;
-  text-align: center;
-  padding: 10px 0;
-  border-bottom: 2px solid #8510c4;
-  margin-bottom: 5px;
-}
-.newsBlock_content {
-  display: flex;
-  flex-direction: column;
-  height: inherit;
-  justify-content: space-between;    
-}
-.newsBlock_content--item {
-  max-height: 130px;
-  
-}
-
 
 .informationLine_contentBox {
   position: relative;
@@ -56,6 +17,7 @@
 
 .informationLine_content--active {
   display: block;
+  position: relative;
   
 }
 
@@ -71,6 +33,7 @@
 }
 
 .informationLine_btn-next {
+  cursor: pointer;
   background-color: #f8f6f9;
   width: 55px;
   height: 53px;
@@ -104,19 +67,16 @@
   background-color: #b21ec3; 
 }
 
-/* Показать кнопки при наведении на секцию */
 .informationLine_contentBox:hover .informationLine_btn-next {
   opacity: 1; 
 }
 
-/* Эффект наведения на кнопки */
 .informationLine_btn-next:hover {
   background-color: #8623bb;
   color: #fff;
 }
 
   
-  /* Активная кнопка выбора контента */
 .informationLine__btn--active {
   color: #8623bb; 
 }
@@ -134,9 +94,33 @@
   0 0 7px #1D2124;
 }
 
-  /* Текстовая информация */
+
+
+#content-4 .informationLine-text{
+  max-width: 415px;
+  bottom: 34%;
+  left: 90%;
+  transform:translateX(-90%);
+  
+}
+
+#content-2 .informationLine-text{
+  max-width: 438px;
+  bottom: 5%;
+  left: 10%;
+  transform:translateX(-10%);
+}
+
+#content-4 .informationLine-text::before{
+  /* margin: 9px 0 0 -50%;
+  width: 40px;
+  height: 60px; */
+  background-image: none;
+}
+
 .informationLine-text {
   cursor: pointer;
+  max-width: 600px;
   position: absolute;
   bottom: 16%;
   left: 6%; 
