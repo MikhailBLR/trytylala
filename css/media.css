@@ -1,0 +1,137 @@
+@media(min-width:1760px){
+    body{
+      width: 1760px;
+      margin: 0 auto;
+    }
+}
+
+@media(min-width: 1761px){
+    .informationLine{
+      margin: 0;
+    }
+  }
+
+@media(min-width: 1100px) {
+    .header_menu{ 
+        display: none;
+    }
+
+    .header__menu-1761px{
+        width: 100%;
+        display: block;
+    }
+    
+}
+
+@media (max-width:963px) {
+    .newsBlock_conteiner{
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .informationLine{
+        height: auto;
+        grid-template-areas: 
+        "img img img"
+        "news news news"
+        "news news news"
+        ;
+        margin: 0;
+        gap: 25px;
+    }
+    .informationLine_contentBox{
+        grid-area: img;
+        margin: 0;
+        width: 100vw;
+    }
+
+    .informationLine__newsBlock{
+        grid-area: news;
+        min-width: 378px;
+        width: 96vw;
+        margin-right: 0;
+        transform: translateX(2vw);
+    }
+
+    .informationLine_img{
+        min-width: 378px;
+        width: 96vw;
+        transform: translateX(2vw);
+    }
+
+    .informationLine-text{
+        -webkit-text-stroke: 0px rgba(0, 0, 0, 0.445); 
+    }
+
+    .informationLine_title{
+        font-size: 1.5rem;
+    }
+
+    .informationLine_description{
+        font-size: 1.5em;
+    }
+
+    .informationLine_btn-nextContainer{
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 915px) {
+    .header_menu {
+        margin-top: 11px;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .header_title{
+        padding-left: 0;
+        margin-left: 100px;
+        justify-self: start;
+    }
+
+    .header_img{
+        display: none;
+    }
+    .header__burger-bro{
+        margin-left: 13px;
+    }
+}
+
+@media (max-width: 832px){ 
+    .modalWindow__body{
+       margin-top: -50px;
+   }
+   .informationLine_contentBox{
+    height: max-content;
+   }
+   .informationLine_img{
+    height: inherit;
+   }
+
+   .informationLine_btn-nextContainer{
+    padding: 0 1.7vw;
+    top: 40%;
+}
+
+.informationLine_btn-next{
+    width: 10vw;
+
+}
+}
+
+@media (max-width: 612px) {
+    .header_title{
+        margin-left: 0;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 391px) {
+    .informationLine__newsBlock{
+        width: 378px;
+        transform: translateX(1vw);
+    }
+
+    .informationLine_img{
+        transform: translateX(1vw);
+    }
+    
+}

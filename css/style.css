@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url(headerStyle.css);
+@import url(InfoLine.css);
+@import url(modalWindow.css);
+@import url(header__modal.css);
+@import url(info_line-news_block.css);
+@import url(media.css);
+  
+body{
+    min-width: 380px;
+    max-width: 1760px;
+    font-size: 16px;
+    font-family: 'Nunito' ,serif; 
+    background-color:#ffffff;
+    color: #000000;
+       
+}
+
+
+.main {
+    opacity: 0;
+}
+.main_titleOne {
+    
+}
+.mainContent {
+}
+.mainContent_cards {
+}
+.mainContent_item {
+}
+.item_title {
+    letter-spacing: 2px;
+}
+.item_img {
+}
+.item_link-buy {
+}
+.item_link-info {
+}

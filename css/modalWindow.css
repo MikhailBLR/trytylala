@@ -1,0 +1,85 @@
+.modalWindow{
+    
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 33, 34, 0.584);
+    backdrop-filter: blur(32px);
+    top: 0;
+    left: 0;
+    z-index: 90;
+}
+
+.modalWindow--active{
+    visibility: visible;
+    
+}
+
+.modalWindow__body {
+    min-height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-image: url('../image/fotoblocco-156376.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.modalWindow__content {
+    display: grid;
+    grid-template-rows: 69px 97px 58px;
+    grid-template-columns: 0px 318px 142px;
+    grid-template-areas: 
+    ". . btn-close"
+    ". title title"
+    "link link link";    
+    margin-top: 220px;
+}
+.modalWindow__closeBtn {
+    cursor: pointer;
+    justify-self: end;
+    align-self: self-end;
+    grid-area: btn-close;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: rgb(254, 254, 254);
+    transition: background-color 0.4s, color 0.4s;
+}
+
+
+.modalWindow__closeBtn:hover{
+    background-color:blueviolet;
+    color: aliceblue;
+}
+
+.modalWindow__title {
+    justify-self: center;
+    align-self: center;
+    grid-area: title;
+    color: aliceblue;
+    font-size: 28px;
+    cursor: default;
+    
+}
+.modalWindow__linkBox{
+    grid-area: link;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.modalWindow__linkBox #btn-youtube {
+
+
+}
+
+.modalWindow__linkBox #btn-vk--svg :hover{
+     
+
+}
+
+.modalWindow__link {
+
+}
