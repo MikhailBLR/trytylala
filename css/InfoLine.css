@@ -107,9 +107,10 @@
 
 #content-2 .informationLine-text{
   max-width: 438px;
-  bottom: 5%;
+  bottom: 15%;
   left: 10%;
   transform:translateX(-10%);
+  text-align: start;
 }
 
 #content-4 .informationLine-text::before{
