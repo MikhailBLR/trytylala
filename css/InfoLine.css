@@ -1,7 +1,6 @@
 .informationLine {
-  min-width: 380px;
+  min-width: 378px;
   margin: 0 15px;
-  height: 600px;
   display: grid;
   grid-template-columns: 25% 75%;
 }

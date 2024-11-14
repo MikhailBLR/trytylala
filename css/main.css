@@ -1,0 +1,126 @@
+.main{
+    margin-top: 40px;
+}
+
+.main__conteiner {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #ca08df;
+    box-shadow: 0px 0 0px #8347d6,
+                0 0px 0px #cb6af1,
+                0 0 2px #8510c4,
+                0 0px 3px #760571;
+    border-right: none;
+    margin-bottom: 20px;
+}
+.main__titleOne {
+    margin-left: -14px;
+    font-size: 30px;
+    color: rgb(118, 17, 146);
+}
+
+.main__content {
+}
+.main__content_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.main__content_item {
+    margin: 20px 0px 40px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px 15px;
+    border:2px solid #802889;
+    transition: box-shadow 0.3s;
+}
+
+.main__content_item:hover{
+    box-shadow: 1px 0 0px #8347d6,
+                0 2px 10px #cb6af1,
+                0 0 7px #8510c4,
+                0 2px 5px #760571;
+}
+
+.main__item_title {
+    cursor: default;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.main__item_img {
+    cursor: pointer;
+    height: 600px;
+    max-width: 100%;
+    
+}
+.item_link-buy {
+    position: relative;
+    font-weight: 700;
+    padding-top: 6px;
+    text-align: center;
+    margin-top: 12px;
+    width: 150px;
+    height: 30px;
+    text-transform: uppercase;
+    border: 2px solid black;
+    cursor: pointer;
+    overflow:hidden;
+    color: rgb(0, 0, 0);
+    transition: box-shadow 0.3s, bottom 0.5s, right 0.5s;
+}
+
+@keyframes slideme {
+    0% {
+      left: -30px;
+      margin-left: 0px;
+    }
+    30% {
+      left: 110%;
+      margin-left: 80px;
+    }
+    100% {
+      left: 80%;
+      margin-left: 80px;
+    }
+}
+  
+.item_link-buy::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 200px;
+    margin-left: 60px;
+    background: #c526b5;
+    opacity: 0.6;
+    position: absolute;
+    left: -40px;
+    top: -100px;
+    z-index: 3;
+    transform: rotate(45deg);
+    transition: all 0.5s;
+    animation-name: slideme;
+    animation-duration: 4s;
+    animation-delay: 0.05s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+.item_link-buy:hover {
+    box-shadow:  4px 4px #000000;
+    right: 2px;
+    bottom: 2px;
+}
+
+
+.item_link-buy:active{
+    border-color: #8510c4;
+    color:#8510c4;
+    
+}

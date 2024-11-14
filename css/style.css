@@ -5,7 +5,9 @@
 @import url(header__modal.css);
 @import url(info_line-news_block.css);
 @import url(media.css);
-  
+@import url(main.css);
+
+
 body{
     min-width: 378px;
     max-width: 1760px;
@@ -16,25 +18,3 @@ body{
        
 }
 
-
-.main {
-    opacity: 0;
-}
-.main_titleOne {
-    
-}
-.mainContent {
-}
-.mainContent_cards {
-}
-.mainContent_item {
-}
-.item_title {
-    letter-spacing: 2px;
-}
-.item_img {
-}
-.item_link-buy {
-}
-.item_link-info {
-}

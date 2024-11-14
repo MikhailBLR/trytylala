@@ -25,7 +25,7 @@
 
 @media (max-width:963px) {
     .newsBlock_conteiner{
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: 57px 2fr;
     }
 
     .informationLine{
@@ -89,7 +89,7 @@
 
     .header_title{
         padding-left: 0;
-        margin-left: 100px;
+        margin-left: 14%;
         justify-self: start;
     }
 
@@ -175,7 +175,7 @@
 
 @media (max-width: 614px) {
     .header_title{
-        margin-left: 0;
+        margin-left: -12%;
         justify-self: center;
     }
 
@@ -201,6 +201,10 @@
     .modalWindow__closeBtn{
         color: white;
         background-color: inherit;
+    }
+    .header_title{
+        margin-left: 0;
+        justify-self: center;
     }
 }
 
