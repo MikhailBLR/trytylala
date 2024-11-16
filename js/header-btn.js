@@ -18,3 +18,12 @@ function styleOpacity(e,opac) {
 const items =document.querySelector('.header__items-1761px');
 items.addEventListener('mouseover',styleOpacity.bind(0.5));
 items.addEventListener('mouseout', styleOpacity.bind(1));
+
+items.addEventListener('click', function(e){
+    e.preventDefault();
+    if(e.target.classList.contains('header__item_link-1761px')){
+    const scrollElem = e.target.getAttribute('href');
+    console.log(scrollElem)
+    document.querySelector(scrollElem).scrollIntoView({behavior:"smooth"})
+    }
+})

@@ -60,10 +60,10 @@
     max-width: 100%;
     
 }
-.item_link-buy {
+.item__button-buy {
     position: relative;
     font-weight: 700;
-    padding-top: 6px;
+    padding-top: 2px;
     text-align: center;
     margin-top: 12px;
     width: 150px;
@@ -91,7 +91,7 @@
     }
 }
   
-.item_link-buy::after {
+.item__button-buy::after {
     content: "";
     display: block;
     width: 30px;
@@ -112,14 +112,14 @@
     animation-iteration-count: infinite;
   }
 
-.item_link-buy:hover {
+.item__button-buy:hover {
     box-shadow:  4px 4px #000000;
     right: 2px;
     bottom: 2px;
 }
 
 
-.item_link-buy:active{
+.item__button-buy:active{
     border-color: #8510c4;
     color:#8510c4;
     

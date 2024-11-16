@@ -9,7 +9,13 @@
     .informationLine{
       margin: 0;
     }
-  }
+}
+
+@media(max-width: 1230px){
+    .main__content_item{
+        width: 40%;
+    }
+}
 
 @media(min-width: 1100px) {
     .header_menu{ 
