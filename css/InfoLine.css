@@ -8,16 +8,44 @@
 .informationLine_contentBox {
   position: relative;
   margin-left: 20px;
+  max-height: 600px;
+  overflow: hidden;
+  border-radius: 3px;
+  border: 2px solid black;
+  box-shadow: 0px 0 7px #1D2124,
+  0 0 2px #1D2124,
+  0 0 5px #1D2124,
+  0 0 7px #1D2124;
+}
+
+#content-2{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#content-3{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#content-4{
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .informationLine_content {
-  display: none;
+  /* display: none; */
+  position: relative;
+  transition: transform 1s;
   
 }
 
 .informationLine_content--active {
   display: block;
-  position: relative;
+  /* position: relative; */
   
 }
 
@@ -87,11 +115,6 @@
   width: 100% ;
   height: 600px;
   filter: brightness(77%);
-  border-radius: 3px;
-  box-shadow: 0px 0 7px #1D2124,
-  0 0 2px #1D2124,
-  0 0 5px #1D2124,
-  0 0 7px #1D2124;
 }
 
 

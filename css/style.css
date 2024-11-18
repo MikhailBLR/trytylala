@@ -18,3 +18,11 @@ body{
        
 }
 
+.section{
+    transition: transform 1s;
+}
+
+.section__hidden{
+    opacity: 0;
+    transform: translateY(8rem);
+}

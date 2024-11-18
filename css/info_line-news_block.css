@@ -1,4 +1,5 @@
 .informationLine__newsBlock {
+  max-height: 600px;
   border-radius: 3px;
   background-color: #ffffff;
   margin-right: 20px;
@@ -29,7 +30,7 @@
   flex-direction: column;
   justify-content: space-around;
   overflow-y:auto;
-  padding: 0 2% 0 5%;
+  padding: 0 2% 0 2%;
 }
 
 
@@ -60,3 +61,10 @@
 .newsBlock__item-descr {
   font-size: 15px;
 }
+
+#news-small_img{
+  width: 50%;
+  height: 100%;
+  margin-right: 5px;
+}
+

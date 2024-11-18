@@ -96,3 +96,11 @@
     color: #9613b3;
 }
 
+.header-fix{
+    position: fixed;
+    top:0;
+    background-color: #ffffff;
+    width:100%;
+    max-width: 1760px;
+    z-index: 11;
+}

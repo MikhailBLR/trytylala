@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" >
             <div class="header_menu">
                 <button class="header__burger-bro"><img class="burger-img" src="image/free-icon-burger-menu-17807662.png" alt="">
                     <p class='burger-text'>Меню</p> 
@@ -20,7 +20,7 @@
             </div>
             <section class="header__menu-1761px">
                 <ul class="header__items-1761px">
-                    <li class="header__item-1761px"><a href="#" class="header__item_link-1761px">Главная</a></li>
+                    <li class="header__item-1761px"><a href="#informationLine" class="header__item_link-1761px">Главная</a></li>
                     <li class="header__item-1761px"><a href="#main" class="header__item_link-1761px">Маркет</a></li>
                     <li class="header__item-1761px"><a href="#" class="header__item_link-1761px">Bad Club</a></li>
                     <li class="header__item-1761px"><a href="#" class="header__item_link-1761px">Поддержка автора</a></li>
@@ -30,7 +30,7 @@
             </section>
     </header>
 
-    <section class="informationLine">
+    <section class="informationLine section" id="informationLine">
 
         <article class="informationLine__newsBlock">
             <div class="newsBlock_conteiner">
@@ -46,15 +46,17 @@
                         </div>
                     </a>
                     <a  href= "https://web.telegram.org/a/#-1002231167779" class="newsBlock_content--item item__conteiner">
-                        <img src="image/tg/icons8-tg-48.svg" alt="" class="newsBlock__item_img">
+                        <img src="image/никитосик.jpg" id="news-small_img" alt="">
+                        <!-- <img src="image/tg/icons8-tg-48.svg" alt="" class="newsBlock__item_img"> -->
                         <div class="newsBlock__item_text-conteiner">
                             <h3 class="newsBlock__item-title">Никита Васильевич конечно в полном порядке</h3>
                             <p class="newsBlock__item-descr">Таркичем успевает заниматься, и музыкой, и даже тётей во время езды 😂</p>
                         </div>
                     </a>
                     <a class="newsBlock_content--item item__conteiner" href="https://www.youtube.com/@ylus">
-                        <img src="image/youtube/icons8-youtube.svg" alt="" class="newsBlock__item_img">
-                        <div class="newsBlock__item_text-conteiner">
+                        <!-- <img src="image/youtube/icons8-youtube.svg" alt="" class="newsBlock__item_img"> -->
+                        <img src="image/9f777d45-a216-49b1-a284-e14e4ff2ce8d.jpg" id="news-small_img" alt="">
+                        <div class="newsBlock__item_text-conteiner" id="news__content-3">
                             <h3 class="newsBlock__item-title">Всем привет, ловите небольшой подгончик </h3>
                             <p class="newsBlock__item-descr"> Новый выпуск на канале!</p>
                         </div>
@@ -90,7 +92,7 @@
             </div>
         </article>
 
-        <div class="informationLine_contentBox">
+        <article class="informationLine_contentBox">
 
             <div class="informationLine_btn-nextContainer">
                 <button class="informationLine_btn-next" id="btn-back"><span>&lt;</span></button>
@@ -118,49 +120,77 @@
                 </div>
                 
             </article>
-        </div>
+        </article>
 
     </section>
 
     <main class="main" id="main">
-        <div class="main__conteiner">
-            <h2 class="main__titleOne">Маркет</h2>
-        </div>
-        <div class="main__content">
-            <ul class="main__content_cards">
-               <li class="main__content_item">
-                <h3 class="main__item_title">Godzilla</h3>
-                <img src="image/Шмотки/14339456-b1ff-4754-9ba7-9a4d1459d2f0.webp" alt="" class="main__item_img">
-                <button class="item__button-buy">Take my money</button>
-               </li>
-               <li class="main__content_item">
-                <h3 class="main__item_title">King-Kong</h3>
-                <img src="image/Шмотки/113b3f36-999f-4bbb-902b-7c4604393a50.webp" alt="" class="main__item_img">
-                <button class="item__button-buy">Take my money</button>
-                </li>
-               <li class="main__content_item">
-                <h3 class="main__item_title">Diablo</h3>
-                <img src="image/Шмотки/114e7d08-1a99-4dd5-9a99-c7aa1b09243b.webp" alt="" class="main__item_img">
-                <button class="item__button-buy">Take my money</button>
-               </li>
-               <li class="main__content_item">
-                <h3 class="main__item_title">Hustler</h3>
-                <img src="image/Шмотки/4bca7f95-977b-46f4-a170-9b4088079b97.webp" alt="" class="main__item_img">
-                <button class="item__button-buy">Take my money</button>
-               </li>
-               <li class="main__content_item">
-                <h3 class="main__item_title">Orange</h3>
-                <img src="image/Шмотки/51cd4fa3-dec6-400f-8394-68eeec5513ea.webp" alt="" class="main__item_img">
-                <button class="item__button-buy">Take my money</button>
-               </li>
-               <li class="main__content_item">
-                <h3 class="main__item_title">Lemon</h3>
-                <img src="image/Шмотки/3385084c-35ae-4ac1-a751-1571b1b6a8a7.webp" alt="" class="main__item_img">
-                <button class="item__button-buy">Take my money</button>
-               </li>
-            </ul>
-        </div>
+        <section class="main__section_market section">
+            <div class="main__conteiner">
+                <h2 class="main__titleOne">Маркет</h2>
+            </div>
+            <div class="main__content">
+                <button class="main__market-back">Назад</button>
+                <ul class="main__content_cards">
+                    <li class="main__content_item main__content_item-cyber--active main__card_market">
+                        <h3 class="main__item_title">Godzilla</h3>
+                        <img src="image/Шмотки/14339456-b1ff-4754-9ba7-9a4d1459d2f0.webp" alt="" class="main__item_img">
+                        <button class="main__card_button item__button-buy">Take my money</button>
+                        <button class = "main__card_button item__button-more" id="cyber">Открыть раздел</button>
+                    </li>
+                    <li class="main__content_item main__card_market">
+                        <h3 class="main__item_title">King-Kong</h3>
+                        <img src="image/Шмотки/113b3f36-999f-4bbb-902b-7c4604393a50.webp" alt="" class="main__item_img">
+                        <button class="main__card_button item__button-buy">Take my money</button>
+                        </li>
+                    <li class="main__content_item main__card_market">
+                        <h3 class="main__item_title">Diablo</h3>
+                        <img src="image/Шмотки/114e7d08-1a99-4dd5-9a99-c7aa1b09243b.webp" alt="" class="main__item_img">
+                        <button class="main__card_button item__button-buy">Take my money</button>
+                    </li>
+                    <li class="main__content_item main__card_market">
+                        <h3 class="main__item_title">Hustler</h3>
+                        <img src="image/Шмотки/4bca7f95-977b-46f4-a170-9b4088079b97.webp" alt="" class="main__item_img">
+                        <button class="main__card_button item__button-buy">Take my money</button>
+                    </li>
+                    <li class="main__content_item main__card_market">
+                        <h3 class="main__item_title">Orange</h3>
+                        <img src="image/Шмотки/51cd4fa3-dec6-400f-8394-68eeec5513ea.webp" alt="" class="main__item_img">
+                        <button class="main__card_button item__button-buy">Take my money</button>
+                    </li>
+                    <li class="main__content_item main__card_market">
+                        <h3 class="main__item_title">Lemon</h3>
+                        <img src="image/Шмотки/3385084c-35ae-4ac1-a751-1571b1b6a8a7.webp" alt="" class="main__item_img">
+                        <button class="main__card_button item__button-buy">Take my money</button>
+                    </li>
+                </ul>
+                <ul class="main__content_cards">
+                    <li class="main__content_item-classic main__card_market main__content_item-classic--active">
+                        <h3 class="main__item_title">Classic Man</h3>
+                        <img src="image/Шмотки/classik1.webp" alt="" class="main__item_img">
+                        <button class="main__card_button item__button-buy" id="classic-buy">Take my money</button>
+                        <button class = "main__card_button item__button-more" id="classic">Открыть раздел</button>
+                    </li>
+                    <li class="main__content_item-classic main__card_market">
+                        <h3 class="main__item_title">Classic Man Two</h3>
+                        <img src="image/Шмотки/classik2.webp" alt="" class="main__item_img">
+                        <button class="main__card_button item__button-buy" id="classic-buy">Take my money</button>
+                    </li>
+                    <li class="main__content_item-classic main__card_market">
+                        <h3 class="main__item_title">Classic Man</h3>
+                        <img src="image/Шмотки/classik1.webp" alt="" class="main__item_img">
+                        <button class="main__card_button item__button-buy" id="classic-buy">Take my money</button>
+                    </li>
+                    <li class="main__content_item-classic main__card_market">
+                        <h3 class="main__item_title">Classic Man Two</h3>
+                        <img src="image/Шмотки/classik2.webp" alt="" class="main__item_img">
+                        <button class="main__card_button item__button-buy" id="classic-buy">Take my money</button>
+                    </li>
+                </ul>    
+            </div>
+        </section>
     </main>
+
     <div id="header--modal" class="header__modal">
         <div class="header__modal_body">
             <div class="header__modal_conteiner">
@@ -229,6 +259,7 @@
             </div>
         </div>
     </div>
+    <script src="js/main-market.js"></script>
     <script src="js/header-btn.js"></script>
     <script src="js/header-modal.js"></script>
     <script src="js/renderCards.js"></script>

@@ -40,15 +40,11 @@ function openModal(element) {
         
         if (linkYouTube) {
             btnYouTube.href = linkYouTube.href; 
-        } else {
-            btnYouTube.href = '#'; 
-        }
+        } 
 
         if (linkVk) {
             btnVk.href = linkVk.href; 
-        } else {
-            btnVk.href = '#'; 
-        }
+        } 
     }
 }
 
