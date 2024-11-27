@@ -47,7 +47,10 @@ function multiply (id){
     }
     if(window.innerWidth <= 1200){
         cardsConteiner.forEach((item)=>{ item.style.width = '70%' });
-    }else{
+    }else if(window.innerWidth <= 707){
+        cardsConteiner.forEach((item)=>{ item.style.width = '90%' });
+    }
+    else{
         cardsConteiner.forEach((item)=>{ item.style.width = '30%' });
     }
     
