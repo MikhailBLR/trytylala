@@ -15,7 +15,7 @@ function styleOpacity(e,opac) {
     }
 };
 
-const items =document.querySelector('.header__items-1761px');
+const items = document.querySelector('.header__items-1761px');
 items.addEventListener('mouseover',styleOpacity.bind(0.5));
 items.addEventListener('mouseout', styleOpacity.bind(1));
 

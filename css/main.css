@@ -31,19 +31,19 @@
     flex-wrap: wrap;
 }
 .main__content_cards {
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .main__card_market{
+    /* width: 30%; */
     margin: 20px 0px 40px;
-    width: 100%;
     padding: 10px 15px 15px;
-    transition: box-shadow 0.3s;
 }
 
-.main__content_item {
+.main__content_item-cyber {
     display: none;
     border:2px solid #802889;
     transition: box-shadow 0.5s ;
@@ -185,6 +185,8 @@
     border: 2px solid black;
     width: 90px;
     font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .main__market-back:hover{

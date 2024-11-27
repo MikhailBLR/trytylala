@@ -6,6 +6,7 @@
 }
 
 .informationLine_contentBox {
+  min-width: 370px;
   position: relative;
   margin-left: 20px;
   max-height: 600px;

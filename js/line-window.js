@@ -3,12 +3,17 @@
 const btnNext = document.querySelector('#btn-next');
 const btnBack = document.querySelector('#btn-back');
 const contents = document.querySelectorAll('.informationLine_content');
-const buttons = document.querySelectorAll('.informationLine__btn');
+const buttonsBox = document.querySelector('.informationLine_box-btn');
 const aLinks = document.querySelectorAll('.informationLine-text')
 const images = document.querySelectorAll('.informationLine_img')
 
 let currentIndex = 0;
 
+
+contents.forEach(function(_, i){
+    buttonsBox.insertAdjacentHTML('beforeend', `<li class="informationLine__btn" data-button="content-${i}"></li>`)});
+
+const buttons = [...buttonsBox.children]
 
 contents.forEach(function(content,i){
     if (i > 0) {
@@ -26,6 +31,8 @@ function showContent(index) {
         button.classList.toggle('informationLine__btn--active', i === index);
     });
 }
+
+showContent(0)
 
 btnNext.addEventListener('click', function() {
     currentIndex = (currentIndex + 1) % contents.length;
@@ -46,14 +53,6 @@ buttons.forEach((button, index) => {
 
 
 
-
-
-
-
-
-
-
-
 // function callBack (entries){
 //     if(!entries[0].isIntersecting){
 //         document.querySelector('.header').classList.add('header-fix');
@@ -65,17 +64,17 @@ buttons.forEach((button, index) => {
 // const observ = new IntersectionObserver(callBack,{threshold: 0.3,});
 // observ.observe(document.querySelector('#informationLine'));
 
-function callSection(entr, observe){
-    if(entr[0].isIntersecting){
-    entr[0].target.classList.remove('section__hidden')
-    observe.unobserve(entr[0].target)
-    }
-}
+// function callSection(entr, observe){
+//     if(entr[0].isIntersecting){
+//     entr[0].target.classList.remove('section__hidden')
+//     observe.unobserve(entr[0].target)
+//     }
+// }
 
-const allSectiion = document.querySelectorAll('.section');
-const observeSection = new IntersectionObserver(callSection,{threshold: 0.15});
+// const allSectiion = document.querySelectorAll('.section');
+// const observeSection = new IntersectionObserver(callSection,{threshold: 0.15});
 
-allSectiion.forEach((section)=>{
-    observeSection.observe(section);
-    section.classList.add('section__hidden')
-})
+// allSectiion.forEach((section)=>{
+//     observeSection.observe(section);
+//     section.classList.add('section__hidden')
+// })

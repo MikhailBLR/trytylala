@@ -12,9 +12,9 @@
 }
 
 @media(max-width: 1230px){
-    .main__content_item{
+    /* .main__content_item{
         width: 40%;
-    }
+    } */
 }
 
 @media(min-width: 1100px) {
@@ -59,10 +59,12 @@
     }
 
     .informationLine_img{
+        margin-left: -16px;
         min-width: 378px;
-        width: 96vw;
+        width: 100%;
         transform: translateX(2vw);
     }
+    
 
     .informationLine-text{
         -webkit-text-stroke: 0px rgba(0, 0, 0, 0.445); 
@@ -111,18 +113,22 @@
     .modalWindow__body{
        margin-top: -50px;
     }
-   .informationLine_contentBox{
-        height: max-content;
+
+    .informationLine_contentBox {
+        transform: translateX(2vw);
+        height: 53vw;
+        width: 96vw;
     }
+
    .informationLine_img{
         height: inherit;
     }
 
    .informationLine_btn-nextContainer{
-        padding: 0 14px;
+        padding: 0;
         top: 0;
-        height: calc(99% + 3px);
-        margin-top: -1px;
+        height: calc(99% + 2px);
+    
     }
 
     .informationLine_btn-next{
@@ -150,7 +156,20 @@
     }
 }
 
+
+@media(max-width: 752px){
+    .informationLine_img{
+        margin-left: -15px;
+    }
+    
+}
+
 @media(max-width: 651px){
+
+
+    .informationLine_img{
+        margin-left: -9px;
+    }
     .modalWindow__title{
         font-size: 20px;
     }
@@ -172,22 +191,10 @@
     }
 }
 
-@media(max-width: 560px){
-    .modalWindow__content {
-        grid-template-rows: 72px 26px 64px;
-        grid-template-columns: 3px 228px 166px;
-    }
-}
-
 @media (max-width: 614px) {
     .header_title{
         margin-left: -12%;
         justify-self: center;
-    }
-
-    .informationLine_btn-nextContainer{
-        padding: 0 13px;
-        height: calc(99% + 2px);
     }
 
     #content-4 .informationLine-text {
@@ -195,11 +202,19 @@
 
 }
 
+@media(max-width: 560px){
+    .modalWindow__content {
+        grid-template-rows: 72px 26px 64px;
+        grid-template-columns: 3px 228px 166px;
+    }
+}
+
+
 @media (max-width: 415px) {
-    .informationLine_btn-nextContainer{
+    /* .informationLine_btn-nextContainer{
         padding: 0 9px;
         height: calc(99% + 1px);
-    }
+    } */
     .modalWindow__content {
         grid-template-rows: 0px 13px 64px;
         grid-template-columns: 0px 204px 112px;

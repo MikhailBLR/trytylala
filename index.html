@@ -6,6 +6,12 @@
     <title>Ylus</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main-market.js"></script>
+    <script defer src="js/header-btn.js"></script>
+    <script defer src="js/header-modal.js"></script>
+    <script defer src="js/render-cards.js"></script>
+    <script defer src="js/line-window.js"></script>
+    <script defer src="js/modal-window.js"></script>
 </head>
 <body>
     <header class="header" >
@@ -100,10 +106,6 @@
             </div>
 
             <ul class="informationLine_box-btn">
-                <li class="informationLine__btn informationLine__btn--active" data-button="content-1"></li>
-                <li class="informationLine__btn" data-button="content-2"></li>
-                <li class="informationLine__btn" data-button="content-3"></li>
-                <li class="informationLine__btn" data-button="content-4"></li>
             </ul>
 
             <article class="informationLine_content informationLine_content--active" id="content-1">
@@ -132,42 +134,42 @@
             <div class="main__content">
                 <button class="main__market-back">Назад</button>
                 <ul class="main__content_cards">
-                    <li class="main__content_item main__content_item-cyber--active main__card_market">
+                    <li class="main__content_item-cyber main__content_item-cyber--active main__card_market" id="multiply-card">
                         <h3 class="main__item_title">Godzilla</h3>
-                        <img src="image/Шмотки/14339456-b1ff-4754-9ba7-9a4d1459d2f0.webp" alt="" class="main__item_img">
+                        <img src="image/Шмотки/14339456-b1ff-4754-9ba7-9a4d1459d2f0.webp" alt="cyber" class="main__item_img">
                         <button class="main__card_button item__button-buy">Take my money</button>
                         <button class = "main__card_button item__button-more" id="cyber">Открыть раздел</button>
                     </li>
-                    <li class="main__content_item main__card_market">
+                    <li class="main__content_item-cyber main__card_market">
                         <h3 class="main__item_title">King-Kong</h3>
                         <img src="image/Шмотки/113b3f36-999f-4bbb-902b-7c4604393a50.webp" alt="" class="main__item_img">
                         <button class="main__card_button item__button-buy">Take my money</button>
                         </li>
-                    <li class="main__content_item main__card_market">
+                    <li class="main__content_item-cyber main__card_market">
                         <h3 class="main__item_title">Diablo</h3>
                         <img src="image/Шмотки/114e7d08-1a99-4dd5-9a99-c7aa1b09243b.webp" alt="" class="main__item_img">
                         <button class="main__card_button item__button-buy">Take my money</button>
                     </li>
-                    <li class="main__content_item main__card_market">
+                    <li class="main__content_item-cyber main__card_market">
                         <h3 class="main__item_title">Hustler</h3>
                         <img src="image/Шмотки/4bca7f95-977b-46f4-a170-9b4088079b97.webp" alt="" class="main__item_img">
                         <button class="main__card_button item__button-buy">Take my money</button>
                     </li>
-                    <li class="main__content_item main__card_market">
+                    <li class="main__content_item-cyber main__card_market">
                         <h3 class="main__item_title">Orange</h3>
                         <img src="image/Шмотки/51cd4fa3-dec6-400f-8394-68eeec5513ea.webp" alt="" class="main__item_img">
                         <button class="main__card_button item__button-buy">Take my money</button>
                     </li>
-                    <li class="main__content_item main__card_market">
+                    <li class="main__content_item-cyber main__card_market">
                         <h3 class="main__item_title">Lemon</h3>
                         <img src="image/Шмотки/3385084c-35ae-4ac1-a751-1571b1b6a8a7.webp" alt="" class="main__item_img">
                         <button class="main__card_button item__button-buy">Take my money</button>
                     </li>
                 </ul>
                 <ul class="main__content_cards">
-                    <li class="main__content_item-classic main__card_market main__content_item-classic--active">
+                    <li class="main__content_item-classic main__card_market main__content_item-classic--active" id="multiply-card">
                         <h3 class="main__item_title">Classic Man</h3>
-                        <img src="image/Шмотки/classik1.webp" alt="" class="main__item_img">
+                        <img src="image/Шмотки/classik1.webp" alt="classic" class="main__item_img">
                         <button class="main__card_button item__button-buy" id="classic-buy">Take my money</button>
                         <button class = "main__card_button item__button-more" id="classic">Открыть раздел</button>
                     </li>
@@ -259,11 +261,5 @@
             </div>
         </div>
     </div>
-    <script src="js/main-market.js"></script>
-    <script src="js/header-btn.js"></script>
-    <script src="js/header-modal.js"></script>
-    <script src="js/renderCards.js"></script>
-    <script src="js/line-window.js"></script>
-    <script src="js/modalWindow.js"></script>
 </body>
 </html>
